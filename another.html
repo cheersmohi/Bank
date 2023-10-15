@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-transparent">
+    <header>
+      <h1 class="text-4xl text-center mt-16 mb-10">
+        <span class="font-bold text-blue-500">"LINK BANK"</span> Account
+        Information
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4 text-white">
+          <div class="text-3xl bg-sky-600 rounded font-medium p-8">
+            Deposit
+            <h2 class="text-4xl mb-3 font-semibold">
+              $$<span id="deposit-dlr">00</span>
+            </h2>
+          </div>
+          <div class="text-3xl bg-red-500 rounded font-medium p-8">
+            Withdraw
+            <h2 class="text-4xl font-semibold">
+              $$<span id="withdraw-total">00</span>
+            </h2>
+          </div>
+          <div class="text-3xl bg-green-400 rounded font-medium p-8">
+            Totall Balance
+            <h2 class="text-4xl font-semibold">
+              $$ <span id="balance-total">550</span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <!-- Deposit & Withdraw section -->
+      <section>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-slate-400 mt-4 p-8 rounded">
+            <h3 class="text-3xl mb-2 text-white">Please Deposit</h3>
+            <div action="">
+              <input
+                id="deposit-input"
+                class="border-3 rounded w-3/4 block mb-3 p-0 px-3 border-gray-400"
+                type="text"
+                placeholder="Please deposit your $ here"
+              />
+              <button
+                id="deposit-button"
+                class="text-white font-medium border-2 px-3 py-2 rounded-lg bg-green-500"
+              >
+                Deposit
+              </button>
+            </div>
+          </div>
+          <div class="bg-purple-400 mt-4 p-8 rounded">
+            <h3 class="text-3xl mb-2 text-white">Withdrawal Amount</h3>
+            <div action="">
+              <input
+                id="withdraw-input"
+                class="border-3 rounded w-3/4 block mb-3 p-0 px-3 border-gray-400"
+                type="text"
+                placeholder="Write your withdrawal amount here"
+              />
+              <button
+                id="withdraw-button"
+                class="text-white font-medium border-2 px-3 py-2 rounded-lg bg-green-500"
+              >
+                Withdraw
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/another.js"></script>
+  </body>
+</html>
